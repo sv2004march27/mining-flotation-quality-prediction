@@ -1,5 +1,3 @@
-
-```markdown
 # 🏭 Quality Prediction in a Mining Process using XGBoost
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
@@ -48,45 +46,7 @@ The model achieved highly accurate trend tracking on the unseen test dataset:
    git clone [https://github.com/sv2004march27/mining-flotation-quality-prediction.git](https://github.com/sv2004march27/mining-flotation-quality-prediction.git)
    cd mining-flotation-quality-prediction
 
-```
-
-2. **Install dependencies:**
-Ensure you have Python installed, then install the required libraries:
-```bash
-pip install -r requirements.txt
-
-```
-
-
-
-*(Note: The `MiningProcess_Flotation_Plant_Database.csv` dataset exceeds standard Git file size limits. Please ensure your local copy of the dataset is placed in the root directory before running the code.)*
-
-## 💻 Usage
-
-This project offers two ways to interact with the model:
-
-### Option 1: Live Web Application (Streamlit)
-
-This repository includes a fully functional Streamlit web application. Users can upload a CSV of plant telemetry, and the app will automatically engineer the lag features, apply the pre-trained XGBoost weights, and generate a live visualization dashboard.
-
-```bash
-streamlit run app.py
-
-```
-
-### Option 2: Jupyter Notebook Pipeline
-
-If you wish to view the data exploration, train the model from scratch, or view the 4-panel evaluation dashboard, simply open the notebook and execute the cells sequentially.
-
-```bash
-jupyter notebook Quality_Prediction_Mining.ipynb
-
-```
-
-## 📂 Repository Structure
-
-```text
-📦 Repository Root
+   📦 Repository Root
  ┣ 📜 app.py                               # Streamlit web application script
  ┣ 📜 Quality_Prediction_Mining.ipynb      # Interactive notebook for complete pipeline
  ┣ 📜 xgboost_silica_model.json            # Exported weights for the trained XGBoost model
@@ -95,19 +55,4 @@ jupyter notebook Quality_Prediction_Mining.ipynb
  ┣ 📜 .gitignore                           # Git configuration to exclude large CSV files
  ┗ 📜 README.md                            # Project documentation
 
-```
-
-## 🔮 Future Enhancements
-
-* **Live API Integration:** Connecting the inference script directly to real-time MQTT plant sensors for live-streamed predictions.
-* **Automated Hyperparameter Tuning:** Implementing Optuna to systematically sweep and find the absolute optimal XGBoost parameters for this specific facility.
-
----
-
-*Engineered by [Shivam Verma*](https://www.google.com/search?q=https://github.com/sv2004march27)
-
-```
-
-This version connects all the dots of what you have built into a cohesive, highly professional package. How does this updated structure look to you?
-
-```
+   
